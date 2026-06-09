@@ -1,19 +1,260 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/background"
+    android:fillViewport="true">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Number Input 1 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_number1"
+            android:textColor="@color/label_text"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/etNumber1"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="@string/hint_number1"
+            android:inputType="numberDecimal|numberSigned"
+            android:textSize="18sp"
+            android:textColor="@color/input_text"
+            android:background="@drawable/input_background"
+            android:paddingHorizontal="16dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Number Input 2 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_number2"
+            android:textColor="@color/label_text"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/etNumber2"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="@string/hint_number2"
+            android:inputType="numberDecimal|numberSigned"
+            android:textSize="18sp"
+            android:textColor="@color/input_text"
+            android:background="@drawable/input_background"
+            android:paddingHorizontal="16dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Basic Operation Buttons -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_basic"
+            android:textColor="@color/label_text"
+            android:textSize="12sp"
+            android:letterSpacing="0.1"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_marginBottom="12dp">
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:text="@string/btn_add"
+                android:textSize="20sp"
+                android:backgroundTint="@color/primary"
+                android:layout_marginEnd="4dp" />
+
+            <Button
+                android:id="@+id/btnSubtract"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:text="@string/btn_subtract"
+                android:textSize="20sp"
+                android:backgroundTint="@color/primary"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp" />
+
+            <Button
+                android:id="@+id/btnMultiply"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:text="@string/btn_multiply"
+                android:textSize="20sp"
+                android:backgroundTint="@color/primary"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp" />
+
+            <Button
+                android:id="@+id/btnDivide"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:text="@string/btn_divide"
+                android:textSize="20sp"
+                android:backgroundTint="@color/primary"
+                android:layout_marginStart="4dp" />
+
+        </LinearLayout>
+
+        <!-- Bonus: Scientific Buttons -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_scientific"
+            android:textColor="@color/label_text"
+            android:textSize="12sp"
+            android:letterSpacing="0.1"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btnSqrt"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:text="@string/btn_sqrt"
+                android:textSize="16sp"
+                android:backgroundTint="@color/secondary"
+                android:layout_marginEnd="4dp" />
+
+            <Button
+                android:id="@+id/btnSquare"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:text="@string/btn_square"
+                android:textSize="16sp"
+                android:backgroundTint="@color/secondary"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp" />
+
+            <Button
+                android:id="@+id/btnModulo"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:text="@string/btn_modulo"
+                android:textSize="16sp"
+                android:backgroundTint="@color/secondary"
+                android:layout_marginStart="4dp" />
+
+        </LinearLayout>
+
+        <!-- Clear Button -->
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/btn_clear"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/error"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Result Display -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_result"
+            android:textColor="@color/label_text"
+            android:textSize="12sp"
+            android:letterSpacing="0.1"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:text="@string/result_placeholder"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/result_text"
+            android:gravity="center_vertical|end"
+            android:background="@drawable/result_background"
+            android:paddingHorizontal="20dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- History Box -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_history"
+            android:textColor="@color/label_text"
+            android:textSize="12sp"
+            android:letterSpacing="0.1"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="80dp"
+            android:text="@string/history_placeholder"
+            android:textSize="13sp"
+            android:textColor="@color/label_text"
+            android:background="@drawable/history_background"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Dark Mode Toggle -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/label_dark_mode"
+                android:textColor="@color/label_text"
+                android:textSize="14sp" />
+
+            <Switch
+                android:id="@+id/switchDarkMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:thumbTint="@color/primary"
+                android:trackTint="@color/secondary" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
