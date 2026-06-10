@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Smart Calculator</string>
+
+    <string name="label_number1">First Number</string>
+    <string name="label_number2">Second Number</string>
+    <string name="label_basic">BASIC OPERATIONS</string>
+    <string name="label_scientific">SCIENTIFIC (uses Number 1)</string>
+    <string name="label_result">RESULT</string>
+    <string name="label_history">HISTORY</string>
+    <string name="label_dark_mode">Dark Mode</string>
+
+    <string name="hint_number1">Enter first number</string>
+    <string name="hint_number2">Enter second number</string>
+
+    <string name="btn_add">+</string>
+    <string name="btn_subtract">−</string>
+    <string name="btn_multiply">×</string>
+    <string name="btn_divide">÷</string>
+    <string name="btn_sqrt">√x</string>
+    <string name="btn_square">x²</string>
+    <string name="btn_modulo">x%y</string>
+    <string name="btn_clear">CLEAR</string>
+
+    <string name="result_placeholder">0</string>
+    <string name="history_placeholder">No calculations yet…</string>
+
+    <string name="error_empty_fields">Please enter both numbers.</string>
+    <string name="error_divide_zero">Error: Cannot divide by zero!</string>
+    <string name="error_negative_sqrt">Error: Cannot take √ of a negative number!</string>
+    <string name="error_invalid_number">Error: Invalid number entered.</string>
+</resources>
