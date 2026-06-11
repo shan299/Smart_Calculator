@@ -115,10 +115,13 @@ public class MainActivity extends AppCompatActivity {
                 break;
             default: return;
         }
-
         String formatted = formatResult(result);
         tvResult.setText(formatted);
         appendHistory(num1 + " " + symbol + " " + num2 + " = " + formatted);
+
+// Automatically put result into first number field for chaining
+        etNumber1.setText(formatted);
+        etNumber2.setText("");
     }
 
     private void calculateScientific(String operation) {
