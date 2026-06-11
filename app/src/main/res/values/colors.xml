@@ -23,29 +23,4 @@
 
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
-</resources><?xml version="1.0" encoding="utf-8"?>
-<resources>
-<color name="background">#F5F5F5</color>
-<color name="primary">#1976D2</color>
-<color name="secondary">#7B1FA2</color>
-<color name="error">#D32F2F</color>
-<color name="input_text">#212121</color>
-<color name="label_text">#757575</color>
-<color name="result_text">#1976D2</color>
-<color name="input_bg">#FFFFFF</color>
-<color name="result_bg">#E3F2FD</color>
-<color name="history_bg">#F3E5F5</color>
-
-<color name="dark_background">#121212</color>
-<color name="dark_primary">#90CAF9</color>
-<color name="dark_secondary">#CE93D8</color>
-<color name="dark_input_text">#EEEEEE</color>
-<color name="dark_label_text">#BDBDBD</color>
-<color name="dark_result_text">#90CAF9</color>
-<color name="dark_input_bg">#1E1E1E</color>
-<color name="dark_result_bg">#1A237E</color>
-<color name="dark_history_bg">#1A0033</color>
-
-<color name="white">#FFFFFF</color>
-<color name="black">#000000</color>
 </resources>
